@@ -2,20 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Kalameh Bold";
+  src: url("https://db.onlinewebfonts.com/t/c56ea8aca8b3b1f84bcb7365c6ae4af0.eot");
+  src: url("https://db.onlinewebfonts.com/t/c56ea8aca8b3b1f84bcb7365c6ae4af0.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c56ea8aca8b3b1f84bcb7365c6ae4af0.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c56ea8aca8b3b1f84bcb7365c6ae4af0.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/c56ea8aca8b3b1f84bcb7365c6ae4af0.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c56ea8aca8b3b1f84bcb7365c6ae4af0.svg#Kalameh Bold")
+      format("svg");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Vazir";
+  src: url("https://db.onlinewebfonts.com/t/e2b31b59d40719dfa19d27a19e829da8.eot");
+  src: url("https://db.onlinewebfonts.com/t/e2b31b59d40719dfa19d27a19e829da8.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e2b31b59d40719dfa19d27a19e829da8.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e2b31b59d40719dfa19d27a19e829da8.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/e2b31b59d40719dfa19d27a19e829da8.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e2b31b59d40719dfa19d27a19e829da8.svg#Vazir")
+      format("svg");
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 10px;
+  background-color: #fff;
+  font-family: "Kalameh Bold";
+  direction: rtl;
 }
